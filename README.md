@@ -14,7 +14,7 @@ Front end happy developers (Jaqueline, Rodrigo and Matheus)
 
 Your challenge is to build a reactjs app that connects to the Github API (https://developer.github.com/v3/) and list all public repositories from your user.
 
-## Feel free to:
+## Feel free to
 
 Create any UI/UX design, but responsive;
 Use create-react-app or webpack as a build tool;
