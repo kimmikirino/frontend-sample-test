@@ -16,11 +16,11 @@ Your challenge is to build a reactjs app that connects to the Github API (https:
 
 ## Feel free to:
 
-Create any UI/UX design, but responsive
-Use create-react-app or webpack as a build tool
-Use ES6+
-Use any additional library
-Use pre processors
+Create any UI/UX design, but responsive;
+Use create-react-app or webpack as a build tool;
+Use some features of ES6+;
+Use any additional library;
+Use pre processors;
 
 ## Submission instructions
 
@@ -31,11 +31,13 @@ Use pre processors
 
 ## Bonus
 
-1. When a repo is clicked show a new page with the last 10 commits related to that repo;
-2. Create a search field to filter the commits by the term inserted into the field;
-3. Show us your work through your commit history;
-4. Host the website on the service of your choice;
-5. Unit tests or any other test you think is important.
+1. Use some state managing solution;
+2. Unit tests or any other test you think is important.
+3. When a repo is clicked show a new page with the last 10 commits related to that repo;
+4. Create a search field to filter the commits by the term inserted into the field;
+5. Show us your work through your commit history;
+6. Host the website on the service of your choice;
+
 
 ## Questions or Problems?
 
