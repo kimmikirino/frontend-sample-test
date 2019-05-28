@@ -16,11 +16,11 @@ Your challenge is to build a reactjs app that connects to the Github API (https:
 
 ## Feel free to
 
-Create any UI/UX design, but responsive;
-Use create-react-app or webpack as a build tool;
-Use some features of ES6+;
-Use any additional library;
-Use pre processors;
+- Create any UI/UX design, but responsive;
+- Use create-react-app or webpack as a build tool;
+- Use some features of ES6+;
+- Use any additional library;
+- Use pre processors;
 
 ## Submission instructions
 
