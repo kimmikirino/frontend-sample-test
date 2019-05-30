@@ -6,11 +6,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/app.scss';
-        const App = () => (
-        <div>
-            <h1>Hello world!!</h1>
-        </div>
-)
+import Repository from "./components/Repository";
+import Error from "./components/Error"
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+
+const App = () => ({
+        render() {
+            return (
+                    <div>
+                        <h1>Meus repositórios</h1>
+                        <BrowserRouter>
+                            <Switch>
+                            <Route path="/user/:user" component={Repository}/>
+                            
+                            </Switch>
+                        </BrowserRouter>
+                    </div>
+                    );
+        }
+    }
+    );
 ReactDOM.render(<App/>, document.getElementById('root'));
 
 
