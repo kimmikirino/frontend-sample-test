@@ -7,6 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/app.scss';
 import Repository from "./components/Repository";
+import Commits from "./components/Commits";
 import Error from "./components/Error"
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
@@ -17,8 +18,9 @@ const App = () => ({
                         <h1>Meus repositórios</h1>
                         <BrowserRouter>
                             <Switch>
-                            <Route path="/user/:user" component={Repository}/>
-                            
+                            <Route exact path="/" component={Repository}/>
+                            <Route path="/commits/:repo" component={Commits}/>
+                            <Route component={Error}/>
                             </Switch>
                         </BrowserRouter>
                     </div>

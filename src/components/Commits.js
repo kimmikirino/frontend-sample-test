@@ -1,19 +1,17 @@
 import React, {Component} from "react";
-import {Router, Switch, Route, Link } from 'react-router-dom';
-import Commits from "./Commits";
 
-class Repository extends Component {
+class Commits extends Component {
     constructor(props) {
         super(props);
         this.state = {
             items: [],
             isLoaded: false,
-            user: this.props.match.params.user
+            repo: this.props.match.params.repo
         };
     }
 
     componentDidMount() {
-        fetch('https://api.github.com/users/iaopier/repos')
+        fetch("https://api.github.com/repos/iaopier/"+this.state.repo+"/commits")
                 .then(res => res.json())
                 .then(json => {
                     this.setState({
@@ -27,31 +25,25 @@ class Repository extends Component {
     render() {
         var isLoaded = this.state.isLoaded;
         var items = this.state.items;
-        console.log(this.state);
         if (!isLoaded) {
             return <div>Loading...</div>;
         } else {
             return (
                     <div className="App">
-                        
-                            <div className="row">
-                                <section className="col-md-12 ">
-                                    <h2>User: {this.state.user}</h2>
-                                    <h3>Repositórios</h3>
-                                    {items.map(item => (
+                        <div className="row">
+                            <section className="col-md-12 ">
+                                <h3>Commit</h3>
+                                {items.map(item => (
                                                         <li>
-                                                            <Link to={'/commits/'+item.name} >{item.full_name}</Link>
+                                                            {item.commit.message}
                                                         </li>
                                                             ))}
-                                </section>
-                            </div>
-                    
-                            
+                            </section>
+                        </div>
                     </div>
                     );
         }
     }
 
 }
-
-export default Repository;
+export default Commits;
