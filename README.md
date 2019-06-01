@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## To get start this project, remember the following steps:
@@ -74,49 +73,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# Front end code challenge
-
-Hello!
-
-Thanks for your interest in joining the team :)
-This is a front end code challenge designed to assess the ability of a front-end candidate to create an app using our current technology stack.
-
-We wish you the best of luck!
-
-Thanks,
-Front end happy developers (Jaqueline, Rodrigo and Matheus)
-
-## Overview 
-
-Your challenge is to build a reactjs app that connects to the Github API (https://developer.github.com/v3/) and list all public repositories from your user.
-
-## Feel free to
-
-- Create any UI/UX design, but responsive;
-- Use create-react-app or webpack as a build tool;
-- Use some features of ES6+;
-- Use any additional library;
-- Use pre processors;
-
-## Submission instructions
-
-1. Fork this repository on github;
-2. Create the project as described above;
-3. Push all of your changes and create a PR against this repository.
-4. Edit this readme file with the instructions to run the project, and add any comments that you think is relevant.
-
-## Bonus
-
-1. Use some state managing solution;
-2. Unit tests or any other test you think is important.
-3. When a repo is clicked show a new page with the last 10 commits related to that repo;
-4. Create a search field to filter the commits by the term inserted into the field;
-5. Show us your work through your commit history;
-6. Host the website on the service of your choice;
-
-
-## Questions or Problems?
-
-You can write us a Github issue.
->>>>>>> f1bd4f4e509f7bcc9b390096eb5504ca73cbd372
