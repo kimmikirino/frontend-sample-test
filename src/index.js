@@ -1,18 +1,18 @@
 import './index.css';
+import 'materialize-css';
+import 'materialize-css/dist/css/materialize.min.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from './components/App';
-
-import 'materialize-css';
-import 'materialize-css/dist/css/materialize.min.css';
+import Search from './components/Search';
 
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute/>
+      <IndexRoute component={Search} />
       <Route/>
     </Route>
   </Router>
