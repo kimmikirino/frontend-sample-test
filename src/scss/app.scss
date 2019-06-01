@@ -9,3 +9,52 @@ and open the template in the editor.
 */
 @import "~bootstrap/scss/bootstrap";
 
+img.size{
+    width:5em;
+    height:5em;
+}
+
+$break-large: 720px;
+
+@media screen and (max-width: $break-large) {
+    .small--font{
+        font-size:15px;
+    }
+    .text--info{
+        font-size:14px;
+    }
+}
+
+$break-large: 1024px;
+
+@media screen and (max-width: $break-large) {
+    .small--font{
+        font-size:15px;
+    }
+    .text--info{
+        font-size:14px;
+    }
+}
+
+.user--box{
+    border:2px solid blue;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.top--banner{
+    background-color:blue;
+    height:1.5em;
+    margin-bottom:0;
+}
+
+.text--color{
+    color:white; 
+}
+
+li {
+ list-style-type: none;
+}
+
