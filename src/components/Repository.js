@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Router, Switch, Route, Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Commits from "./Commits";
 
 class Repository extends Component {
@@ -32,21 +32,41 @@ class Repository extends Component {
             return <div>Loading...</div>;
         } else {
             return (
-                    <div className="App">
-                        
-                            <div className="row">
-                                <section className="col-md-12 ">
-                                    <h2>User: {this.state.user}</h2>
-                                    <h3>Repositórios</h3>
-                                    {items.map(item => (
-                                                        <li>
-                                                            <Link to={'/commits/'+item.name} >{item.full_name}</Link>
-                                                        </li>
-                                                            ))}
-                                </section>
-                            </div>
+                    <div className="App container">
+                        <div className="row">
+                            <section className="col-md-6 col-sm-12 col-xs-12 user--box">
+                                <div className="row">
+                                    <div className="col-md-4 col-sm-12 col-xs-12">
+                                        <h2>
+                                            <img className="size" src={"" + items[0].owner.avatar_url} />
+                                        </h2>
+                                    </div>
+                                    <div className="col-md-8 col-sm-12 col-xs-12">
+                                        <p className="text--info">
+                                            User: {items[0].owner.login}
+                                        </p>
+                                        <p className="text--info">
+                                        <a href={items[0].owner.followers_url}>Followers</a>
+                                        </p>
+                                        <p className="text--info">
+                                        <a href={items[0].owner.html_url}>GitHub</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section className="col-md-6 col-sm-12 col-xs-12 user--box">
+                                <h3>Repositórios</h3>
+                                {items.map(item => (
+                                                <li>
+                                                    <Link to={'/commits/' + item.name} >{item.full_name}</Link>
+                                    
+                                    
+                                                </li>
+                                                ))}
+                            </section>
+                        </div>
                     
-                            
+                    
                     </div>
                     );
         }

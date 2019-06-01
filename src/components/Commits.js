@@ -29,13 +29,15 @@ class Commits extends Component {
             return <div>Loading...</div>;
         } else {
             return (
-                    <div className="App">
+                    <div className="App container">
                         <div className="row">
                             <section className="col-md-12 ">
                                 <h3>Commit</h3>
                                 {items.map(item => (
                                                         <li>
                                                             {item.commit.message}
+                                                            <p>---------------------</p>
+                                                            
                                                         </li>
                                                             ))}
                             </section>

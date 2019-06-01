@@ -14,15 +14,17 @@ import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 const App = () => ({
         render() {
             return (
-                    <div>
-                        <h1>Meus repositórios</h1>
-                        <BrowserRouter>
-                            <Switch>
-                            <Route exact path="/" component={Repository}/>
-                            <Route path="/commits/:repo" component={Commits}/>
-                            <Route component={Error}/>
-                            </Switch>
-                        </BrowserRouter>
+                    <div className="row">
+                        <div className="col-md-12 col-sm-12 col-xs-12">
+                            <h1 className="text--center top--banner text--color small--font">Meus repositórios</h1>
+                            <BrowserRouter>
+                                <Switch>
+                                <Route exact path="/" component={Repository}/>
+                                <Route path="/commits/:repo" component={Commits}/>
+                                <Route component={Error}/>
+                                </Switch>
+                            </BrowserRouter>
+                        </div>
                     </div>
                     );
         }
