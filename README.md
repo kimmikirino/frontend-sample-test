@@ -1,4 +1,4 @@
-##Projeto concluído
+**Projeto concluído**
 
 Stack
 
@@ -8,15 +8,15 @@ Babel
 
 Reactjs
 
-#External
+**External**
 
 Bootstrap
 
-#Preprocessor
+**Preprocessor**
 
 SASS
 
-#Execução
+**Execução**
 
 Para execultar é necessário dentro do diretório de clone do projeto
 executar um npm run build.
