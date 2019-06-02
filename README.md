@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-https://stackblitz.com/github/kamide-c/frontend-sample-test
+<a href="https://stackblitz.com/github/kamide-c/frontend-sample-test" target="_blank">kamide-c/frontend-sample-test</a>
 
 ## Available Scripts
 
