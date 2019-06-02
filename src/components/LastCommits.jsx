@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collection, CollectionItem } from 'react-materialize';
+import { Collection, CollectionItem, TextInput } from 'react-materialize';
 
 class LastCommits extends React.Component {
   constructor() {
@@ -16,10 +16,20 @@ class LastCommits extends React.Component {
       .then(
         commits => {
           this.setState({
-            commits: commits
+            initialItems: commits.slice(0, 10),
+            commits: commits.slice(0, 10),
           });
         }
       );
+  }
+
+  filterList = (event) => {
+    var updatedList = this.state.initialItems;
+    updatedList = updatedList.filter(function (item) {
+      return item.commit.message.toLowerCase().search(
+        event.target.value.toLowerCase()) !== -1;
+    });
+    this.setState({ commits: updatedList });
   }
 
   renderCommits(commit) {
@@ -36,15 +46,18 @@ class LastCommits extends React.Component {
       return (<div className="user-page">LOADING COMMITS...</div>);
     }
 
-    const commits = this.state.commits.slice(0, 10);
+    const commits = this.state.commits;
 
     return (
-      <Collection header="Last Commits">
-        {commits.map(this.renderCommits)}
-      </Collection>
+      <div className="commits-page">
+        <TextInput placeholder="Search" icon="search" onChange={this.filterList}/>
+        <Collection header="Last Commits">
+          {commits.map(this.renderCommits)}
+        </Collection>
+      </div>
     );
   }
-  
+
 };
 
 export default LastCommits;
