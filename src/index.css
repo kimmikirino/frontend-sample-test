@@ -1,0 +1,35 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  margin: 0; }
+
+.commit-message {
+  margin: 0; }
+
+.commit-author {
+  margin: 0;
+  font-size: .8em;
+  color: #999; }
+
+.main-header {
+  padding: 0.5rem;
+  background-color: #222;
+  color: #fff;
+  overflow: hidden; }
+
+.main-content {
+  padding: 0.5rem; }
+
+.search-page {
+  text-align: center; }
+
+.user-info__title, .user-info__bio, .user-info__stat-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.user-info__stat {
+  margin-top: 20px; }
+
+.user-info__stat p {
+  margin: 0;
+  white-space: nowrap; }
