@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Collection } from 'react-materialize';
 
 class Repo extends React.Component {
   constructor() {
@@ -21,7 +22,12 @@ class Repo extends React.Component {
 
   renderRepo(repo) {
     return (
-      <Link className="collection-item" key={repo.name}>{repo.name}</Link>
+      <Link to={{
+          pathname: '/user/kamide-c/commits',
+          state: { commits_url: repo.commits_url}
+        }} 
+        className="collection-item" 
+        key={repo.name}>{repo.name}</Link>
     );
   }
 
@@ -33,9 +39,9 @@ class Repo extends React.Component {
     const repo = this.state.repo;
 
     return (
-      <div className="collection">
+      <Collection>
         {repo.map(this.renderRepo)}
-      </div>
+      </Collection>
     );
   }
 };

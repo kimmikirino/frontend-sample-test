@@ -9,6 +9,20 @@ body {
     padding: 0.5rem;
 }
 
+@mixin collection-item {
+    margin: 0;
+}
+
+.commit-message {
+    @include collection-item;
+}
+
+.commit-author {
+    @include collection-item;
+    font-size: .8em;
+    color: #999;
+}
+
 .main-header {
     @include main;
     background-color: #222;
