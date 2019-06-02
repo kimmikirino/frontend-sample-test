@@ -10,12 +10,25 @@ class User extends React.Component {
   }
 
   componentDidMount() {
+    function handleErrors(response) {
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+      return response;
+    }
     fetch(`https://api.github.com/users/${this.props.params.username}`)
+      .then(handleErrors)
       .then(response => response.json())
       .then(
         user => {
           this.setState({
             user: user
+          });
+        }
+      ).catch(
+        error => {
+          this.setState({
+            error: error
           });
         }
       );
@@ -31,6 +44,10 @@ class User extends React.Component {
   }
 
   render() {
+    if (this.state.error) {
+      return (<div className="user-page">We couldn’t find any repositories matching '{this.props.params.username}'</div>);
+    }
+
     if (!this.state.user) {
       return (<div className="user-page">LOADING...</div>);
     }
@@ -62,7 +79,7 @@ class User extends React.Component {
             {stats.map(this.renderStat)}
           </Col>
         </Row>
-        <Repo repos_url={user.repos_url}/>
+        <Repo repos_url={user.repos_url} />
       </div>
     );
   }
