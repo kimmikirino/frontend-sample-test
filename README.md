@@ -1,44 +1,26 @@
-# Front end code challenge
+#Projeto concluído
 
-Hello!
+Stack
 
-Thanks for your interest in joining the team :)
-This is a front end code challenge designed to assess the ability of a front-end candidate to create an app using our current technology stack.
+Webpack
 
-We wish you the best of luck!
+Babel
 
-Thanks,
-Front end happy developers (Jaqueline, Rodrigo and Matheus)
+Reactjs
 
-## Overview 
+#External
 
-Your challenge is to build a reactjs app that connects to the Github API (https://developer.github.com/v3/) and list all public repositories from your user.
+Bootstrap
 
-## Feel free to
+#Preprocessor
 
-- Create any UI/UX design, but responsive;
-- Use create-react-app or webpack as a build tool;
-- Use some features of ES6+;
-- Use any additional library;
-- Use pre processors;
+SASS
 
-## Submission instructions
+#Execução
 
-1. Fork this repository on github;
-2. Create the project as described above;
-3. Push all of your changes and create a PR against this repository.
-4. Edit this readme file with the instructions to run the project, and add any comments that you think is relevant.
+Para execultar é necessário dentro do diretório de clone do projeto
+executar um npm run build.
 
-## Bonus
+Caso faltem bibliotecas do npm instalar.
 
-1. Use some state managing solution;
-2. Unit tests or any other test you think is important.
-3. When a repo is clicked show a new page with the last 10 commits related to that repo;
-4. Create a search field to filter the commits by the term inserted into the field;
-5. Show us your work through your commit history;
-6. Host the website on the service of your choice;
-
-
-## Questions or Problems?
-
-You can write us a Github issue.
+Após isso, npm start deve subir o server funcional.
