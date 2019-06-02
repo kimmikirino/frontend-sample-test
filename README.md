@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <li>npm start</li>
 </ol>
 
+## Live Demo
+
+https://stackblitz.com/github/kamide-c/frontend-sample-test
+
 ## Available Scripts
 
 In the project directory, you can run:
