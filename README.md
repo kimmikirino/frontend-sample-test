@@ -33,10 +33,11 @@ Your challenge is to build a reactjs app that connects to the Github API (https:
 
 1. Use some state managing solution;
 2. Unit tests or any other test you think is important.
-3. When a repo is clicked show a new page with the last 10 commits related to that repo;
-4. Create a search field to filter the commits by the term inserted into the field;
-5. Show us your work through your commit history;
-6. Host the website on the service of your choice;
+3. Find repos by any user.
+4. When a repo is clicked show a new page with the last 10 commits related to that repo;
+5. Create a search field to filter the commits by the term inserted into the field;
+6. Show us your work through your commit history;
+7. Host the website on the service of your choice;
 
 
 ## Questions or Problems?
