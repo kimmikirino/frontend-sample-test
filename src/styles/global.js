@@ -10,6 +10,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+    background-color: #5892e9;
+  }
+
+  .mainContainer{
+    width: 100%;
+    height: 100%;
+    margin: auto;
   }
 `;
 

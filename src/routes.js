@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Main from "./containers/main";
-import Repos from "./components/Repos";
+import HomeScreen from "./pages/home";
+import UserRepos from "./pages/userRepos";
 
-const Routes = () => {
+const Routes = props => {
   return (
     <Switch>
-      <Route path="/repos" component={Repos} />
-      <Route exact path="/" component={Main} />
+      <Route exact path="/" component={HomeScreen} />
+      <Route path="/repos" component={UserRepos} />
     </Switch>
   );
 };
