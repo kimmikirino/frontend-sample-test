@@ -12,12 +12,12 @@ Front end happy developers (Jaqueline, Rodrigo and Matheus)
 
 ## Overview 
 
-Your challenge is to build a reactjs app that connects to the Github API (https://developer.github.com/v3/) and list all public repositories from your user.
+Your challenge is to build a reactjs/angular 2+ app that connects to the Github API (https://developer.github.com/v3/) and list all public repositories from your user.
 
 ## Feel free to
 
 - Create any UI/UX design, but responsive;
-- Use create-react-app or webpack as a build tool;
+- Use create-react-app/angular-cli or webpack as a build tool;
 - Use some features of ES6+;
 - Use any additional library;
 - Use pre processors;
@@ -31,14 +31,31 @@ Your challenge is to build a reactjs app that connects to the Github API (https:
 
 ## Bonus
 
-1. Use some state managing solution;
-2. Unit tests or any other test you think is important.
-3. Find repos by any user.
-4. When a repo is clicked show a new page with the last 10 commits related to that repo;
-5. Create a search field to filter the commits by the term inserted into the field;
-6. Show us your work through your commit history;
-7. Host the website on the service of your choice;
+- Unit tests or any other test you think is important.
+- Find repos by any user.
+- When a repo is clicked show a new page with the last 10 commits related to that repo;
+- Create a search field to filter the commits by the term inserted into the field;
+- Show us your work through your commit history;
+- Host the website on the service of your choice;
 
+### React
+- Use some state managing solution;
+- Hooks
+
+### Angular
+- Angular Conventions
+- Use Interface
+- Component files separation
+
+## Evaluation criteria
+
+Code organization
+Code readability
+Commit history - structure and quality in english
+Component-based structure
+Libraries used
+Reusable Components
+ES6 features
 
 ## Questions or Problems?
 
@@ -46,3 +63,7 @@ You can write us a Github issue.
 
 ## Feedback (Optional)
 Feedback is part of our culture, it would be very gratifying if you could contribute to our hire process by responding to [this short questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe02C1P-ZwCTBK5h5p5yckQs0DbsRGjwz7GaI-ICzks2EhxkA/viewform).
+
+## Happy Coding!
+
+<img src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" data-canonical-src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" width="150" height="150" />
