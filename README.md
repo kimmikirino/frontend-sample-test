@@ -45,4 +45,4 @@ Your challenge is to build a reactjs app that connects to the Github API (https:
 You can write us a Github issue.
 
 ## Feedback (Optional)
-Feedback is part of our culture, it would be very gratifying if you could contribute to our contraction process by responding to [this short questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe02C1P-ZwCTBK5h5p5yckQs0DbsRGjwz7GaI-ICzks2EhxkA/viewform).
+Feedback is part of our culture, it would be very gratifying if you could contribute to our hire process by responding to [this short questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe02C1P-ZwCTBK5h5p5yckQs0DbsRGjwz7GaI-ICzks2EhxkA/viewform).
