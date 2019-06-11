@@ -10,7 +10,7 @@ We wish you the best of luck!
 Thanks,
 Front end happy developers (Jaqueline, Rodrigo and Matheus)
 
-<img src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" data-canonical-src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" width="150" height="150" />
+<img src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" data-canonical-src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" width="150"  />
 
 ## Overview 
 
