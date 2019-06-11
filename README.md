@@ -51,13 +51,13 @@ Your challenge is to build a reactjs/angular 2+ app that connects to the Github 
 
 ## Evaluation criteria
 
-Code organization
-Code readability
-Commit history - structure and quality in english
-Component-based structure
-Libraries used
-Reusable Components
-ES6 features
+- Code organization
+- Code readability
+- Commit history - structure and quality in english
+- Component-based structure
+- Libraries used
+- Reusable Components
+- ES6 features
 
 ## Questions or Problems?
 
