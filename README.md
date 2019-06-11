@@ -10,6 +10,8 @@ We wish you the best of luck!
 Thanks,
 Front end happy developers (Jaqueline, Rodrigo and Matheus)
 
+<img src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" data-canonical-src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" width="150" height="150" />
+
 ## Overview 
 
 Your challenge is to build a reactjs/angular 2+ app that connects to the Github API (https://developer.github.com/v3/) and list all public repositories from your user.
