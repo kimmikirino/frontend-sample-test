@@ -1,0 +1,123 @@
+
+<div class="container">
+  
+  <div class="row">
+    <div class="col-12">
+      <h1>Scienza Github Profile Repository List</h1>
+    </div>
+  </div>
+  
+  <div class="row user-card">
+    <div class="col-12 col-sm-6 col-lg-4" *ngFor="let item of list">
+      <div class="card">
+        <div class="card-header">
+          <h2>User: </h2> {{ item.name }}
+        </div>
+        
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4">
+              <img [src]="item.avatar_url" alt="avatar do usuário">
+            </div>
+            <div class="col-8">
+              <ul>
+                <li> <b>Free Repos:</b> {{ item.public_repos }}</li>
+                <li> <b>Followers:</b> {{ item.followers }}</li>
+                <li> <b>Register:</b> {{ item.created_at | date: 'dd/MM/yyyy' }}</li>
+                <li> <b>Email:</b> {{ item.email }}</li>
+                <li> <b>Company:</b> {{ item.company }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-footer">
+          <button class="btn btn-info" (click)="listUserRepos(item.login)">list user free repositories</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row repos d-none d-lg-block d-xl-block">
+    
+    <table *ngIf="reposList.length > 0" class="col-12">
+      <thead>
+        <th>#ID</th>
+        <th>Name</th>
+        <th>Language</th>
+        <th>Private</th>
+        <th>Last Update</th>
+        <th>Target</th>
+        <th>commits</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let repo of reposList; let i = index">
+          <td> {{ i+1 }} </td>
+          <td> <b>{{ repo.name }}</b> </td>
+          <td [ngClass]="selectLanguage(repo.language)"> {{ repo.language }}</td>
+          <td> {{ repo.private }}</td>
+          <td> {{ repo.updated_at | date: "dd/MM/yyyy" }}</td>
+          <td> <a [href]="repo.html_url" target="_blank">Check Repo</a> </td>
+          <td> <button (click)="checkCommits(repo.name, repo.owner.login)">List Commits</button> </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p class="col-12" *ngIf="reposList.length == 0 && search">
+      <img src="assets/imgs/loaders/dual.gif" />loading repos...
+    </p>
+    
+  </div>
+</div>
+
+<div class="row repos-card d-block d-lg-none d-xl-none">
+  <div class="col-md-6 col-sm-12" *ngFor="let repo of reposList; let i = index">
+    <div class="card">
+      <div class="card-header">
+        <h1>Repositório: <span>{{ repo.name }}</span></h1>
+      </div>
+      <div class="card-body">
+        <div class="info">
+          <div class="row">
+            <div class="col-6">
+              <p [ngClass]="selectLanguage(repo.language)"> {{ repo.language }}</p>
+            </div>
+            <div class="col-6">
+              <p>{{ repo.updated_at | date: "dd/MM/yyyy" }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+          <div class="col-4">
+            <img src="assets/imgs/icons/star.png" alt=""> {{ repo.stargazers_count }}
+          </div>
+          <div class="col-4">
+              <a [href]="repo.html_url" target="_blank">Check Repo</a>
+          </div>
+          <div class="col-4">
+              <button (click)="checkCommits(repo.name, repo.owner.login)">List Commits</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="shadow" (click)="toggleModal()" [class.active]="modal.status">
+  <p *ngIf="commits.length == 0">LOADING ...</p>
+</div>
+<div class="modal" [class.active]="modal.status" *ngIf="commits.length > 0">
+  <div class="modal-header">
+    <h1>List of Commits (last {{ commits.length }} commits) - <b>{{ modal.title }}</b> </h1>
+  </div>
+  <div class="modal-body">
+    <ul>
+      <li *ngFor="let item of commits">
+        <span> <b>Author:</b> {{ item.commit.committer.name }} </span>
+        <span> <b>Message:</b> {{ item.commit.message }} </span>
+      </li>
+    </ul>
+  </div>
+</div>

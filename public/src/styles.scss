@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap');
+
+$size: 28px;
+$spacing: 8px;
+
+$green: #25c877;
+$red: #fb716f;
+$blue: #0090f3;
+$yellow: #ff8408;
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #e2e5ee !important;
+}
+
+.colored {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: $size * .4;
+}
+.javascript {
+    color: $green;
+}
+.typescript {
+    color: darken($green, 10);
+}
+.html {
+    color: $red;
+}
+.shell {
+    color: $blue;
+}
+.css {
+    color: $yellow;
+}
+.java {
+    color: darken($blue, 10);
+}
+.php {
+    color: darken($red, 10);
+}

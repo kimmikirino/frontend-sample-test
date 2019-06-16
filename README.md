@@ -1,3 +1,29 @@
+# Gustavo Yukio - Front end code challenge
+
+Test made using angular and Node.js - NodeJS are only used to serve static files if needed to run this test on a server. The actual test is made uysing Angular 7. Its a simple panel, to search user on github api, and show its repos, and commits.
+
+##Tools
+
+- Angular
+- Bootstrap
+- NodeJS
+- Express (node)
+
+## Initial
+
+- on base directory run ( npm run sciensa) - it will install dependencies on both basedir and angular (public) directory
+
+## How to RUN
+### Angular
+
+- Enters public dir and run (ng serve) - it will compile and run on http://localhost:4200/
+
+### NodeJs
+
+- Enters basedir and run (node server.js) - it will compile and run on http://localhost:3000/
+
+
+
 # Front end code challenge
 
 Hello!

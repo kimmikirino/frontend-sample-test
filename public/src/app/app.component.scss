@@ -1,0 +1,48 @@
+$spacing: 8px;
+
+main {
+    padding-top: $spacing * 3;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        position: relative;
+        overflow: hidden;
+        form {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 92%;
+            transform: translateY(-50%);
+            transition: all 100ms 0s ease-out;
+            background-color: #f8f9fa;
+            input, img, button {
+                display: inline-block;
+            }
+            img {
+                margin-right: $spacing * 3;
+            }
+            input {
+                width: 50%;
+                margin-right: 2%;
+            }
+            button {
+                width: 28%;
+            }
+            &.active {
+                left: 2%;
+                img {
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 558px) {
+    nav {
+        form {
+            left: 90%;
+        }
+    }
+}

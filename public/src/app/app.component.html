@@ -1,0 +1,20 @@
+<div class="page">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sciensa</a>
+        
+        <div class="">
+            <form class="form-inline" [formGroup]="search" [class.active]="showForm">
+                <img src="assets/imgs/icons/arrow.png" alt="show form" (click)="showFormAction()" class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                <input class="form-control" type="search" placeholder="Search for member" aria-label="Pesquisar" formControlName="name">
+                <button class="btn btn-outline-success" (click)="sendSearch()">{{ btnText }}</button>
+            </form>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+</div>
+
