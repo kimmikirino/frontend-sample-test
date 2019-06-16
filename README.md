@@ -1,3 +1,11 @@
+# Instructions to run the project
+
+- Clone the project
+- Open the terminal in the project folder
+- Run the command 'npm install' or 'yarn' and wait to install all the dependecies
+- Run the command 'npm start' to run the project
+- Enjoy
+
 # Front end code challenge
 
 Hello!
