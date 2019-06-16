@@ -4,9 +4,9 @@ Test made using angular and Node.js - NodeJS are only used to serve static files
 
 ##Tools
 
-- Angular
+- Angular (installed globally) - npm i -g @angular/cli
 - Bootstrap
-- NodeJS
+- NodeJS (installed globally) - npm i -g node
 - Express (node)
 
 ## Initial
