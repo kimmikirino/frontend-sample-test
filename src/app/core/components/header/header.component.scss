@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+
+
+.form-inline {
+  flex: 1;
+
+  .form-control {
+    background-color: rgba($white, .15);
+    border: none;
+    outline: 0;
+    color: rgba($white, .5);
+    transition: all .2s ease-in-out;
+
+    &::placeholder{
+      color: rgba($white, .5);
+    }
+
+    &:focus{
+      background-color: $white;
+      box-shadow: none;
+      color: $gray-700;
+    }
+  }
+}
