@@ -5,8 +5,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
-import { HeaderComponent } from './components/header/header.component';
+import { GithubService } from './services/github.service';
 
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [HeaderComponent],
@@ -20,6 +21,7 @@ import { HeaderComponent } from './components/header/header.component';
     RouterModule,
 
     HeaderComponent
-  ]
+  ],
+  providers: [GithubService]
 })
 export class CoreModule { }
