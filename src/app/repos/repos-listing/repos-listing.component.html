@@ -1,4 +1,22 @@
 <app-loading *ngIf="loading"></app-loading>
+
+<div class="container">
+  <div class="row">
+    <form class="form-inline w-100 mb-4">
+      <div class="col">
+        <label class="sr-only" for="inlineFormInputGroup">Search by user</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fa fa-search"></i></div>
+          </div>
+          <input class="form-control" type="search" placeholder="Search by user" aria-label="Search" name="username"
+            [(ngModel)]="username" (keydown.enter)="getUser(username)">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
 <app-user [user]="user" *ngIf="!loading"></app-user>
 <hr>
 <div class="container">
