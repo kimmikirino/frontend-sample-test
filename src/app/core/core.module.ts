@@ -22,6 +22,5 @@ import { HeaderComponent } from './components/header/header.component';
 
     HeaderComponent
   ],
-  providers: [GithubService]
 })
 export class CoreModule { }

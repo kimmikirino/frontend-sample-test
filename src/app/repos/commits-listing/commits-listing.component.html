@@ -1,0 +1,23 @@
+<app-loading *ngIf="loading"></app-loading>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>{{repo}}</h2>
+      <p class="font-italic text-muted">Last 10 commits</p>
+    </div>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let commit of commits">
+          <app-commit [commits]="commit"></app-commit>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 text-right">
+      <a class="btn btn-success my-5" [routerLink]="['/repos']" role="button">voltar</a>
+    </div>
+  </div>
+</div>
