@@ -1,3 +1,10 @@
-<p>
-  repository works!
-</p>
+<a [routerLink]=[repos.full_name] class="list-group-item list-group-item-action mb-3">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{repos.name}}</h5>
+    <small class="text-muted">Update: {{repos.updated_at | date:'short'}}</small>
+  </div>
+  <p class="mb-1">
+    {{repos.description}}
+    <span *ngIf="!repos.description" class="font-italic text-muted">no description</span>
+  </p>
+</a>

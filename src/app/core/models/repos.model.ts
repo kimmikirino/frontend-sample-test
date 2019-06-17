@@ -2,6 +2,6 @@ export interface Repo {
   id: number;
   name: string;
   description: string;
-  fullname: string;
-  stargazers_count: number;
+  full_name: string;
+  updated_at: string;
 }
