@@ -1,48 +1,27 @@
-# Front end code challenge
+# ChallengeAngularSciensa
 
-Hello!
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
 
-Thanks for your interest in joining the team :)
-This is a front end code challenge designed to assess the ability of a front-end candidate to create an app using our current technology stack.
+## Development server
 
-We wish you the best of luck!
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Thanks,
-Front end happy developers (Jaqueline, Rodrigo and Matheus)
+## Code scaffolding
 
-## Overview 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Your challenge is to build a reactjs app that connects to the Github API (https://developer.github.com/v3/) and list all public repositories from your user.
+## Build
 
-## Feel free to
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-- Create any UI/UX design, but responsive;
-- Use create-react-app or webpack as a build tool;
-- Use some features of ES6+;
-- Use any additional library;
-- Use pre processors;
+## Running unit tests
 
-## Submission instructions
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-1. Fork this repository on github;
-2. Create the project as described above;
-3. Push all of your changes and create a PR against this repository.
-4. Edit this readme file with the instructions to run the project, and add any comments that you think is relevant.
+## Running end-to-end tests
 
-## Bonus
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-1. Use some state managing solution;
-2. Unit tests or any other test you think is important.
-3. Find repos by any user.
-4. When a repo is clicked show a new page with the last 10 commits related to that repo;
-5. Create a search field to filter the commits by the term inserted into the field;
-6. Show us your work through your commit history;
-7. Host the website on the service of your choice;
+## Further help
 
-
-## Questions or Problems?
-
-You can write us a Github issue.
-
-## Feedback (Optional)
-Feedback is part of our culture, it would be very gratifying if you could contribute to our contraction process by responding to [this short questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe02C1P-ZwCTBK5h5p5yckQs0DbsRGjwz7GaI-ICzks2EhxkA/viewform).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
