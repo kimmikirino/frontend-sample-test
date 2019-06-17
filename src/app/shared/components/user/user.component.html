@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+
+      <div class="card text-center shadow-sm">
+        <img src="{{user.avatar_url}}" class="card-img-top" alt="{{user.name}}" width="100">
+        <div class="card-body">
+          <h5 class="card-title">{{user.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{user.login}}</h6>
+          <ul class="list-group list-group-horizontal justify-content-center mt-3">
+            <li class="list-group-item">Public Repos <span class="badge badge-pill badge-primary">{{user.public_repos}}</span></li>
+            <li class="list-group-item">Followers <span class="badge badge-pill badge-primary">{{user.followers}}</span></li>
+            <li class="list-group-item">Following <span class="badge badge-pill badge-primary">{{user.following}}</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
