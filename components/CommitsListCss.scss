@@ -1,0 +1,30 @@
+.commits-list {
+    padding-top: 1rem;
+    height: 100vh;
+    .commits-list-box {
+        color: black;
+        border: solid 1px #786287;
+        background-color: white;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        p {
+            word-break: break-all;
+            margin-bottom: 1rem;
+            line-height: 1.4rem;
+            & strong {
+                font-weight: bold;
+                color: #786287;
+            }
+        }
+        button {
+            cursor: pointer;
+            margin-top: 1rem;
+            width: 100%;
+            font-size: 1.2rem;
+            background-color: #786287;
+            color: white;
+            padding: 1rem;
+            font-weight: bold;
+        }
+    }
+}

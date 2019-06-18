@@ -1,0 +1,15 @@
+.header {
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #786287;
+    padding: 1rem;
+    p {
+        margin: 0;
+        padding: 0.3rem;
+        color: white;
+        &.minor {
+            padding: 0.1rem;
+            font-size: 0.8rem;
+        }
+    }
+}

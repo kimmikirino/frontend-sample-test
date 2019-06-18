@@ -1,0 +1,62 @@
+.repo-list-wrapper {
+    p {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+    .repo-list {
+        margin-top: 1.5rem;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            margin-top: 0;
+            & strong {
+                color: blue;
+            }
+        }
+        .repo-list-wrapper {
+            position: relative;
+            color: black;
+            border: solid 1px #786287;
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 15rem;
+                margin-right: 1rem;
+                flex-grow: 1;
+            }
+            .repo-list-box {
+                display: flex;
+                flex-direction: column;
+                p {
+                    word-break: break-all;
+                    &.title {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    &.description {
+                        margin-top: 1rem;
+                        line-height: 1.4rem;
+                    }
+                }
+            }
+            button {
+                cursor: pointer;
+                margin-top: 1rem;
+                width: 100%;
+                font-size: 1.2rem;
+                background-color: #786287;
+                color: white;
+                padding: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
