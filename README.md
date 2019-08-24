@@ -8,7 +8,7 @@ This is a front end code challenge designed to assess the ability of a front-end
 We wish you the best of luck!
 
 Thanks,
-Front end happy developers (Jaqueline, Rodrigo and Matheus)
+Front end happy developers (Jaqueline & Rodrigo)
 
 <img src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" data-canonical-src="https://cdn3.movieweb.com/i/article/DH0stJhn83KZIlHH5wpBvuLVwTliCG/798:50/Men-In-Black-International-Trailer.jpg" width="150"  />
 
